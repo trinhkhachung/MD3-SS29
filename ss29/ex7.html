@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var twoSum = function (nums, target) {
+            var a = [];
+            for (var i = 0; i < nums.length; i++) {
+                var n = nums[i];
+
+                if (a[target - n] >= 0) {
+                    return [a[target - n], i];
+                } else {
+                    a[n] = i;
+                }
+            }
+        };
+        let a = +prompt();
+        let arr = [7, 1, 4, 9, 3, 2, 5];
+        console.log(twoSum(arr, a));
+    </script>
+</body>
+
+</html>

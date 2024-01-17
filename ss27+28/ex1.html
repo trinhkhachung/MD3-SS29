@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,3,4,50,6,7,10]
+        let max = a[0]
+        let min = a[0]
+        for (let i = 1; i < a.length; i++) {
+            max=max>a[i] ? max : a[i]
+            min=min<a[i] ? min : a[i]
+        }
+        alert('số lớn nhất là: '+max);
+        alert('số nhỏ nhất là: '+min);
+    </script>
+</body>
+</html>

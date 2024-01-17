@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function check(arr, str) {
+            let check_arrray = arr.filter((item) => item.includes(str));
+            return check_arrray;
+        }
+        let arr = ["abcd", "efgrfrff", "hugdzcvc", "dungngu", "binhsv"];
+        let str = prompt("Nhập vào một chuỗi:");
+        let str_check = check(arr, str);
+        console.log(str_check);
+    </script>
+</body>
+
+</html>
